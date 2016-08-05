@@ -1,0 +1,162 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+	<RelativeLayout
+	    android:background="#FFFFFF"
+	    android:layout_width="match_parent"
+	    android:layout_height="50dp"
+	    android:orientation="horizontal"
+	    >
+	    
+	    <TextView
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_centerHorizontal="true"
+	        android:text="换乘"
+	        android:layout_centerVertical="true"
+	        android:textSize="25dp" />
+	    
+	</RelativeLayout>
+	<RelativeLayout 
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="vertical"
+	   
+	    >
+	    <EditText 
+	        android:id="@+id/none"
+	        android:layout_marginLeft="10dp"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text=""
+	        />
+	    <ImageView 
+	        android:id="@+id/start"
+	        android:layout_alignParentLeft="true"
+	        android:layout_marginTop="5dp"
+	        android:layout_marginLeft="10dp"
+	        android:layout_width="40dp"
+	        android:layout_height="40dp"
+	        android:background="@drawable/start"
+	        
+	        />
+	    
+		<EditText
+		    android:id="@+id/editText1"
+		    android:layout_toRightOf="@+id/start"
+		    android:layout_marginRight="10dp"
+		    android:layout_marginTop="5dp"
+		    android:layout_width="match_parent"
+		    android:layout_height="40dp"
+		    android:background="@drawable/right_top"
+		    android:hint="输入起点"
+		    android:text="我的位置"
+		    android:ellipsize="end"
+	    	android:singleLine="true" 
+		    android:textColor="@color/mblue"
+		    >
+	
+		    <requestFocus />
+		</EditText>
+		<ImageView 
+	        android:id="@+id/end"
+	        android:layout_marginTop="1dp"
+	        android:layout_marginLeft="10dp"
+	        android:layout_below="@+id/start"
+	        android:layout_alignParentLeft="true"
+	        android:layout_width="40dp"
+	        android:layout_height="40dp"
+	        android:background="@drawable/end"
+	        
+	        />
+		<EditText 
+		    android:id="@+id/editText2"
+		    android:layout_below="@+id/editText1"
+		    android:layout_marginTop="1dp"
+		    android:layout_marginRight="10dp"
+		    android:layout_toRightOf="@+id/end"
+		    android:layout_width="match_parent"
+		    android:layout_height="40dp"
+		    android:background="@drawable/right_bottom"
+		    android:hint="输入终点"
+		    android:ellipsize="end"
+	   		android:singleLine="true" 
+		    android:textColor="@color/mblue"
+		    />
+		<Button 
+	        android:id="@+id/clear1"
+	        android:layout_width="20dp"
+	        android:layout_height="20dp"
+	        android:layout_toLeftOf="@+id/change"
+	        android:layout_above="@+id/editText2"
+	        android:layout_marginRight="5dp"
+	        android:layout_marginBottom="11dp"
+	        android:background="@drawable/clear"
+	        
+	        />
+	    <Button 
+	        android:id="@+id/clear2"
+	        android:layout_width="20dp"
+	        android:layout_height="20dp"
+	        android:layout_toLeftOf="@+id/change"
+	        android:layout_below="@+id/editText1"
+	        android:layout_marginRight="5dp"
+	        android:layout_marginTop="11dp"
+	        android:background="@drawable/clear"
+	        
+	        />
+		<Button
+		    android:id="@+id/change"
+		    android:layout_width="40dp"
+		    android:layout_height="40dp"
+		    android:layout_alignParentRight="true"
+		    android:layout_marginRight="20dp"
+		    android:layout_centerVertical="true"
+		    android:background="@drawable/change"
+		    android:onClick="change"
+		    />
+		
+	</RelativeLayout>
+	<RelativeLayout 
+	    android:layout_width="fill_parent"
+	    android:layout_height="fill_parent"
+	    android:layout_marginTop="5dp"
+	    android:background="#FFFFFF"
+	    >
+		<LinearLayout 
+		    android:id="@+id/linearLayout1"
+		    android:layout_width="fill_parent"
+		    android:layout_height="fill_parent"
+		    android:orientation="vertical"
+		    >
+		    <ListView 
+		        android:id="@+id/listview1"
+		        android:layout_width="fill_parent"
+		        android:layout_height="310dp"
+		       
+		        ></ListView>
+		    <Button 
+		        android:id="@+id/clearhistory"
+		        android:layout_width="fill_parent"
+		        android:layout_height="wrap_content"
+		        android:text="清空历史记录"
+		        android:background="@drawable/selector_clear"
+		        android:onClick="clearHistory"
+		        />
+		</LinearLayout>
+		<LinearLayout 
+		    android:id="@+id/linearLayout2"
+		    android:layout_width="fill_parent"
+		    android:layout_height="fill_parent"
+		    android:orientation="vertical"
+		    >
+		    <ListView 
+		        android:id="@+id/listview2"
+		        android:layout_width="fill_parent"
+		        android:layout_height="wrap_content"
+		        
+		        ></ListView>
+		</LinearLayout>
+	</RelativeLayout>
+</LinearLayout>

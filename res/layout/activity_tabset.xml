@@ -1,0 +1,44 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:android1="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+	    android:background="#FFFFFF"
+	    android:layout_width="match_parent"
+	    android:layout_height="40dp"
+	    
+	    >
+	    <Button 
+	        android:id="@+id/button_back"
+	        android:layout_width="40dp"
+	        android:layout_height="40dp"
+	        android:background="@drawable/select"
+	        android:onClick="back"
+	        />
+
+	    <TextView
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_centerHorizontal="true"
+	        android:text="标签设置"
+	        android:layout_centerVertical="true"
+	        android:textSize="25dp" />
+	    
+	</RelativeLayout>
+	
+	  
+    <ListView
+        android1:id="@+id/listView1"
+        android1:layout_width="match_parent"
+        android1:layout_height="wrap_content"
+        android1:layout_marginTop="1dp"
+        android1:background="#FFFFFF"
+         >
+    </ListView>
+		   
+	    
+	
+	
+</LinearLayout>

@@ -1,0 +1,24 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#FFFFFF"
+     >
+	<com.test.view.RefreshableView
+	    android:id="@+id/refreshable_view"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+	     >
+	    <ListView
+        android:background="#FFFFFF"
+        android:id="@+id/listView1"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginTop="1dp"
+        android:scrollbars="none"
+        >
+   		 </ListView>
+	
+    </com.test.view.RefreshableView>
+
+</RelativeLayout>

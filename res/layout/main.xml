@@ -1,0 +1,41 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent" android:orientation="vertical"
+    android:layout_height="fill_parent">
+    
+    <!-- 中间动态加载View -->
+    <LinearLayout 
+        android:id="@+id/containerBody"
+        android:layout_weight="1" android:layout_height="fill_parent"
+        android:layout_width="fill_parent"
+        android:background="#EAE7E7"
+        android:orientation="vertical">
+    </LinearLayout>
+    <LinearLayout 
+        android:background="@drawable/border"
+        android:layout_gravity="bottom" android:orientation="horizontal"
+        android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <!-- 功能模块按钮1 -->
+        <com.test.view.ImageBtn android:id="@+id/btnModule1"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" 
+            android:layout_marginTop="1dp"
+            android:layout_weight="1"
+            />
+        <!-- 功能模块按钮2 -->
+        <com.test.view.ImageBtn android:id="@+id/btnModule2" 
+            
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" 
+            android:layout_marginTop="1dp"
+            android:layout_weight="1"
+           
+            />
+        <!-- 功能模块按钮3 -->
+        <com.test.view.ImageBtn android:id="@+id/btnModule3" 
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginTop="1dp" 
+            android:layout_weight="1"
+            />
+    </LinearLayout>
+</LinearLayout>
